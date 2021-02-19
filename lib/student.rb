@@ -18,13 +18,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    @twitter = twitter
-    @linkedin = linkedin
-    @github = github
-    @blog = blog
-    @bio = bio
-    @profile_quote = profile_quote
-    self
+    attributes_has.each {|key, value| self.send(("#{key}="), value)}
   end
 
   def self.all
