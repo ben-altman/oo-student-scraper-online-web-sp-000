@@ -11,7 +11,7 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.select do |student|
-
+      
 
     end
   end
